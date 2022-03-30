@@ -39,3 +39,14 @@ Icon image (visual representation of weather conditions)
 Temperature
 
 Humidity
+
+
+# Features
+
+This page was built using the API created and provided by Open Weather.
+
+https://getbootstrap.com/ - Bootstrap framework 
+https://jquery.com/ - jQuery library
+JavaScript
+
+
