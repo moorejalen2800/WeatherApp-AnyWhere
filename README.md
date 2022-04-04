@@ -3,6 +3,8 @@
 This project is a weather dashboard using the OpenWeather API.
 It allows users to make check the current temperature, humidity, wind speed and UV index of a location that they search for. It also provides a five-day forecast for the same location. 
 
+- Deployed Link https://moorejalen2800.github.io/WeatherApp-AnyWhere/
+
 # Instructions
 
 
