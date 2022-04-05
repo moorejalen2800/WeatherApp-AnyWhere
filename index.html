@@ -2,89 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&amp;family=Palette+Mosaic&amp;display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&amp;family=Palette+Mosaic&amp;display=swap"
+    rel="stylesheet">
 
 </head>
 
+
 <body>
-    <main class="main">
-        <form id="search-form" class="search">
-            <input id="search-input" type="text" class=" form-input search-bar">
-            <button id="search-button" type="submit"><i class="fa fa-search">Search</i></button>
+  <main class="main">
+    <form id="search-form" class="search">
+      <input id="search-input" type="text" class=" form-input search-bar">
+      <button id="search-button" type="submit"><i class="fa fa-search">Search</i></button>
 
-        </form>
+    </form>
 
-        <div id="today" class="weather">
-            <h2 id="city">Weather In Philadelphia</h2>
-            <h1 id="temp">51°</h1>
-            <img src="https://openweathermap.org/img/wn/01n@2x.png" alt="" class="icon">
-            <div id="description">Sunny</div>
-            <div id="humidity">Humidity: </div>
-            <div id="wind">Wind Speed:8.4 km</div>
+    <div id="today" class="weather">
+      <h2 id="city">Weather In Philadelphia</h2>
+      <h1 id="temp">51°</h1>
+      <img src="https://openweathermap.org/img/wn/01n@2x.png" alt="" class="icon">
+      <div id="description">Sunny</div>
+      <div id="humidity">Humidity: </div>
+      <div id="wind">Wind Speed:8.4 km</div>
 
+    </div>
 
-        </div>
+    <div class="forecast">
+      <section id="forecast" class="weekly row mt-3">
+      </section>
+    </div>
 
-        <div class="forecast">
-            <section id="forecast" class="weekly row mt-3">
-            </section>
-        </div>
+  </main>
 
-        </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+    integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js"
+    integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js"
+    integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg=="
+    crossorigin="anonymous"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
-            integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js"
-            integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w=="
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js"
-            integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg=="
-            crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <script src="./script.js"></script>
+  <script src="./script.js"></script>
 
 </body>
-
-
-
-
-
 
 </html>
 
 
-
-
-
+        
 
 
       
