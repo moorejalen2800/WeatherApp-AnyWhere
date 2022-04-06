@@ -1,4 +1,5 @@
-var apiKey = 'd91f911bcf2c0f925fb6535547a5ddc9';
+
+   var apiKey = 'd91f911bcf2c0f925fb6535547a5ddc9';
 var weatherUrl = 'https://api.openweathermap.org';
 var searchHistory = [];
 var input = document.querySelector("#search-input");
@@ -75,9 +76,9 @@ function displayWeather(city, data, timezone) {
     card.append(cardBody);
 
     heading.textContent = `${city} (${date})`;
-    tempEl.textContent = `"temp" + ${tempF} + "°"`;
-    humidityEl.textContent = `"Humidity: " + ${humidity} + "%"`;
-    windEl.textContent = `"wind: " + ${wind}`;
+    tempEl.textContent = `Temp ${tempF} °`;
+    humidityEl.textContent = `Humidity:  ${humidity} %`;
+    windEl.textContent = `wind:  ${wind}`;
 
     cardBody.append(heading, tempEl, windEl, humidityEl);
 
@@ -100,4 +101,3 @@ function displayWeather(city, data, timezone) {
 function renderItems(city, data) {
     displayWeather(city, data.current, data.timezone);
 }
-    
